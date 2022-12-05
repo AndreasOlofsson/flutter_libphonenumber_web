@@ -1,0 +1,24 @@
+name: flutter_libphonenumber_web
+publish_to: 'none'
+version: 1.2.2
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+flutter:
+  plugin:
+    platforms:
+      web:
+        pluginClass: FlutterLibPhoneNumberWebPlugin
+        fileName: flutter_libphonenumber_web.dart
+  assets:
+   - ./assets/js/stringbuffer.js
+   - ./assets/js/libphonenumber.js
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  js: ^0.6.4
+  flutter_libphonenumber: 1.2.2
